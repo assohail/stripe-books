@@ -1,0 +1,15 @@
+<h1 style="text-align: center;">Books</h1>
+
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; padding: 20px;">
+  <ul style="list-style-type: none; padding: 0; max-width: 600px; width: 100%;">
+    <% @books.each do |book| %>
+      <li style="border: 1px solid #ccc; border-radius: 5px; padding: 20px; margin-bottom: 20px; background-color: #f9f9f9;">
+        <p><strong>Title:</strong> <%= book.title %></p>
+        <p><strong>Author:</strong> <%= book.author %></p>
+        <p><strong>Description:</strong> <%= book.description %></p>
+        <p style="text-align: center;"><%= link_to 'Buy Now', 'https://buy.stripe.com/test_4gweWy76LbtM7KM000', target: '_blank', style: "padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; text-decoration: none;" %></p>
+      </li>
+    <% end %>
+  </ul>
+  <%# <%= link_to 'Add New Book', new_book_path %>
+</div>

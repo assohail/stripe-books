@@ -1,0 +1,49 @@
+/* styles.css */
+
+/* Centering container for all forms */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Make container full height of viewport */
+  }
+  
+  /* Form fields */
+  .field {
+    margin-bottom: 10px;
+    width: 100%; /* Set field width to 100% */
+  }
+  
+  /* Form labels */
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Form input fields */
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Form submit button */
+  .actions {
+    text-align: center;
+    width: 100%; /* Set button width to 100% */
+  }
+  
+  /* Form error messages */
+  .field_with_errors {
+    color: red;
+  }
+  

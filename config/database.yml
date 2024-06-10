@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  username: postgres
+  password: password
+  pool: 5
+  port: 5432
+
+development:
+  <<: *default
+  # user: postgres
+  # password: postgres
+  database: stripe_development
+
+test:
+  <<: *default
+  database: stripe_test

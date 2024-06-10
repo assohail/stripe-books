@@ -1,0 +1,33 @@
+/* styles.css */
+
+/* Style for the Books heading */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style for each book item */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Style for the "Buy Now" link */
+.buy-now {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.buy-now:hover {
+  background-color: #0056b3;
+}
